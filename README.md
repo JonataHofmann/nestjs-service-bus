@@ -7,9 +7,9 @@
 
   <p align="center"><a href="https://nestjs.com" target="_blank">NestJs</a> custom transport for <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview" target="_blank">Azure Service Bus</a>.</p>
     <p align="center">
-<a href="https://www.npmjs.com/~niur" target="_blank"><img src="https://img.shields.io/npm/v/@niur/nestjs-service-bus.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~niur" target="_blank"><img src="https://img.shields.io/npm/l/@niur/nestjs-service-bus.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~niur" target="_blank"><img src="https://img.shields.io/npm/dm/@niur/nestjs-service-bus.svg" alt="NPM Downloads" /></a>
+<a href="https://www.npmjs.com/~santiagomrn" target="_blank"><img src="https://img.shields.io/npm/v/nestjs-azure-service-bus-transporter.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~santiagomrn" target="_blank"><img src="https://img.shields.io/npm/l/nestjs-azure-service-bus-transporter.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~santiagomrn" target="_blank"><img src="https://img.shields.io/npm/dm/nestjs-azure-service-bus-transporter.svg" alt="NPM Downloads" /></a>
 </p>
 
 ## Description
@@ -89,7 +89,7 @@ The <strong>Azure Service Bus</strong> strategy exposes the properties described
 To access the original Azure Service Bus message use the `Queue` decorator as follows:
 
 ```typescript
-import { Queue } from '@niur/nestjs-service-bus';
+import { Queue } from 'nestjs-azure-service-bus-transporter';
 import { ServiceBusReceiver } from '@azure/service-bus';
 import { Payload, Ctx } from '@nestjs/microservices';
 @Queue({
@@ -140,7 +140,7 @@ Options
 To access the original Azure Service Bus message use the `Subscription` decorator as follows:
 
 ```typescript
-import { Topic } from '@niur/nestjs-service-bus';
+import { Topic } from 'nestjs-azure-service-bus-transporter';
 import { Payload, Ctx } from '@nestjs/microservices';
 import { ServiceBusReceiver } from '@azure/service-bus';
 @Subscription({
