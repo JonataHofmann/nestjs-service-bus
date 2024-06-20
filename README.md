@@ -143,7 +143,7 @@ To access the original Azure Service Bus message use the `Subscription` decorato
 import { Topic } from 'nestjs-azure-service-bus-transporter';
 import { Payload, Ctx } from '@nestjs/microservices';
 import { ServiceBusReceiver } from '@azure/service-bus';
-@Subscription({
+@Topic({
     topic: 'sample-topic',
     subscription: 'sample-subscription',
     receiveMode: 'peekLock', // or receiveAndDelete
