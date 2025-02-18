@@ -1,5 +1,5 @@
 {
-  "name": "nestjs-azure-service-bus-transporter",
+  "name": "@jonata.hofmann/nestjs-service-bus",
   "version": "1.0.1",
   "description": "NestJS Azure Service Bus Microservice Transport",
   "main": "dist/index",
